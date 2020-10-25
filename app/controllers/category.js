@@ -20,7 +20,8 @@ router.route('/')
     .post(async (req, res, next) => {
         try {
             const doc = new Category(req.body);
-            await doc.save();
+            const result = await doc.save();
+            res.json(result);
         } catch (error) {
             next(error);
         }
