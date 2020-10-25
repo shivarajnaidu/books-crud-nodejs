@@ -1,0 +1,16 @@
+### Add Author
+POST http://localhost:3000/api/v1/authors
+Content-Type: application/json
+
+{
+    "name": "yuvaraj",
+    "dob": "1995-02-23",
+    "gender": "M"
+}
+
+###
+GET http://localhost:3000/api/v1/authors
+
+
+###
+GET http://localhost:3000
